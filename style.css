@@ -9,243 +9,81 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 2%;
     background: #222;
 }
-
-
 
 .baner {
     text-align: center;
-    padding: 50px;
+    padding: 5%;
 }
-
-
-
-
 
 .products {
-    
     display: flex;
-   justify-content: center;
-    gap: 20px;
-  padding: 70px;
-  
-    
-  
+    justify-content: center;
+    gap: 3%;
+    padding: 5%;
+    flex-wrap: wrap;
 }
 
-
-
-
-.product1 {
+.product1, .product2, .product3, .product4, .product5, 
+.product6, .product7, .product8, .product9, .product10, .product11 {
     background: #222;
-    padding: 20px;
+    padding: 2%;
     text-align: center;
-    
+    width: 30%;
+    box-sizing: border-box;
 }
 
-.product2 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-.product3 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-.product4 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-.product5 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-.product6 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-.product7 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-.product8 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-.product9 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-.product10 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-.product11 {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-
-
-
-
-
-.product1 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
-.product1 img:hover {
-    content: url("1\ black.jpg");
-    width: 400px;
-    height: 430px;
-}
-
-.product2 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
-.product2 img:hover {
-    content: url("2\ black.jpg");
-    width: 400px;
-    height: 430px;
-}
-
-.product3 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
-.product3 img:hover {
-    content: url("3\ black.jpg");
-    width: 400px;
-    height: 430px;
-}
-
-.product4 img {
-    width: 370px;
-    height: 400px;
+/* картинки */
+.product1 img, .product2 img, .product3 img,
+.product4 img, .product5 img, .product6 img,
+.product7 img, .product8 img, .product9 img,
+.product10 img, .product11 img {
+    width: 100%;
+    height: auto;
     transition: 0.3s;
 }
-.product4 img:hover {
-    content: url("4\ black.jpg");
-    width: 400px;
-    height: 430px;
-}
 
-.product5 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
-.product5 img:hover {
-    width: 400px;
-    height: 430px;
-}
-
-
-.product6 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
-.product6 img:hover {
-    content: url("6\ white.jpg");
-    width: 400px;
-    height: 430px;
-}
-
-.product7 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
-.product7 img:hover {
-    content: url("7\ футболка.jpg");
-    width: 400px;
-    height: 430px;
-}
-
-.product8 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
-.product8 img:hover {
-    content: url("8\ футболка.jpg");
-    width: 400px;
-    height: 430px;
-}
-
-.product9 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
-.product9 img:hover {
-    content: url("9\ футболка.jpg");
-    width: 400px;
-    height: 430px;
-}
-
-.product10 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
-.product10 img:hover {
-    content: url("10\ футболка.jpg");
-    width: 400px;
-    height: 430px;
-}
-
-
-.product11 img {
-    width: 370px;
-    height: 400px;
-    transition: 0.3s ;
-}
+.product1 img:hover,
+.product2 img:hover,
+.product3 img:hover,
+.product4 img:hover,
+.product5 img:hover,
+.product6 img:hover,
+.product7 img:hover,
+.product8 img:hover,
+.product9 img:hover,
+.product10 img:hover,
 .product11 img:hover {
-    content: url("jeans\ 1.jpg");
-    width: 400px;
-    height: 430px;
+    width: 105%;
+    height: auto;
 }
 
-
-
-button{
+/* кнопки */
+button {
     background: red;
     color: white;
-    padding: 10px 20px;
-    
+    padding: 2% 4%;
 }
 
-
-
-
+/* футер */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 2%;
     background: #222;
+}
+
+/* адаптив */
+@media screen and (max-width: 768px) {
+    .product1, .product2, .product3, .product4, .product5,
+    .product6, .product7, .product8, .product9,
+    .product10, .product11 {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 }
